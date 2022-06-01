@@ -11,8 +11,15 @@ import {
   NavBarTopTitle,
   NavBarWrapper,
   ProjectName,
+  NavBarBottomContainer,
+  NavBarMenu,
+  NavBarMenuItem,
+  NavBarMenuLink,
+  NavBarPublicPageLink,
 } from "./Navbar.styles";
 import { HiPlusSm } from "react-icons/hi";
+import { ImLink } from "react-icons/im";
+
 const Navbar = () => {
   return (
     <NavBarWrapper>
@@ -51,7 +58,41 @@ const Navbar = () => {
       </NavBarTop>
       {/* Nav bar bottom */}
       <NavBarBottom>
-        <ProjectName>Azuki</ProjectName>
+        {/* Container */}
+        <NavBarBottomContainer>
+          {/* Project Name */}
+          <ProjectName>Azuki</ProjectName>
+          {/* Menu */}
+          <NavBarMenu>
+            <NavBarMenuItem>
+              <NavBarMenuLink to="analytics">Analytics</NavBarMenuLink>
+            </NavBarMenuItem>
+            <NavBarMenuItem>
+              <NavBarMenuLink active={true} to="project">
+                Project
+              </NavBarMenuLink>
+            </NavBarMenuItem>
+            <NavBarMenuItem>
+              <NavBarMenuLink to="participants">Participants</NavBarMenuLink>
+            </NavBarMenuItem>
+            <NavBarMenuItem>
+              <NavBarMenuLink to="settings">Settings</NavBarMenuLink>
+            </NavBarMenuItem>
+            <NavBarMenuItem>
+              <NavBarMenuLink to="collabs">Collabs</NavBarMenuLink>
+            </NavBarMenuItem>
+            <NavBarMenuItem>
+              <NavBarPublicPageLink to="public-page">
+                <ImLink
+                  style={{
+                    marginRight: ".4rem",
+                  }}
+                />
+                Public Page
+              </NavBarPublicPageLink>
+            </NavBarMenuItem>
+          </NavBarMenu>
+        </NavBarBottomContainer>
       </NavBarBottom>
     </NavBarWrapper>
   );

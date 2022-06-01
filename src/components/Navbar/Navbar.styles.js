@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Container } from "../../themes/GlobalStyle";
 
 export const NavBarWrapper = styled.nav`
   background: var(--white);
@@ -11,13 +12,20 @@ export const NavBarTop = styled.div`
 
 export const NavBarContainer = styled.div`
   width: 100%;
-  max-width: 1222px;
+  max-width: 1250px;
   margin: 0 auto;
   display: flex;
   align-items: center;
 `;
 
 export const NavBarBottom = styled.div``;
+
+export const NavBarBottomContainer = styled(Container)`
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
 export const LogoWrapper = styled.div`
   display: flex;
@@ -63,10 +71,32 @@ export const ProjectName = styled.h2`
   font-size: var(--font-xlg);
 `;
 
-export const NavBarMenu = styled.ul``;
+export const NavBarMenu = styled.ul`
+  display: flex;
+  list-style: none;
+  width: 670px;
+  justify-content: space-between;
+`;
 
 export const NavBarMenuItem = styled.li``;
 
-export const NavBarMenuLink = styled(Link)``;
+export const NavBarMenuLink = styled(Link)`
+  color: var(--pale-sky);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--border-radius-sm);
+  background-color: ${({ active }) => (active ? "var(--athens-gray)" : "none")};
+  color: ${({ active }) => (active ? "var(--oxford-blue)" : "var(--pale-sky)")};
 
-export const NavBarPublicPageLink = styled(Link)``;
+  &:hover {
+    background-color: var(--athens-gray);
+    color: var(--oxford-blue);
+  }
+`;
+
+export const NavBarPublicPageLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  color: var(--portage);
+  text-decoration: none;
+`;
