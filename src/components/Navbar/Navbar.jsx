@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 import {
   Logo,
   LogoText,
@@ -11,7 +12,7 @@ import {
   NavBarWrapper,
   ProjectName,
 } from "./Navbar.styles";
-
+import { HiPlusSm } from "react-icons/hi";
 const Navbar = () => {
   return (
     <NavBarWrapper>
@@ -30,7 +31,22 @@ const Navbar = () => {
           {/* Nav Bar Title */}
           <NavBarTopTitle to="your-projects">Your Projects</NavBarTopTitle>
           {/* Navbar Buttons */}
-          <NavBarButtons>{/* add project button */}</NavBarButtons>
+          <NavBarButtons>
+            {/* add project button */}
+            <Button
+              primary
+              title="New project"
+              size="large"
+              icon={
+                <HiPlusSm
+                  size={25}
+                  style={{
+                    marginRight: ".4rem",
+                  }}
+                />
+              }
+            />
+          </NavBarButtons>
         </NavBarContainer>
       </NavBarTop>
       {/* Nav bar bottom */}

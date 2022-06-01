@@ -11,7 +11,7 @@ export const NavBarTop = styled.div`
 
 export const NavBarContainer = styled.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1222px;
   margin: 0 auto;
   display: flex;
   align-items: center;

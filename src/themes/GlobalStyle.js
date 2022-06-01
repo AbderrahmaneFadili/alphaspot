@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
         --royal-blue:#4F46E5;
         --portage:#9EA0F6;
         --cornflower-blue:#6366F1;
+        --mischka:#D1D5DB;
         /* Border Radius */
         --border-radius-sm:6px;
         --border-radius-md:14px;
