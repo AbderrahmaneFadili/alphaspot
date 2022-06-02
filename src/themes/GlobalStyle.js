@@ -22,13 +22,16 @@ const GlobalStyle = createGlobalStyle`
         --pale-sky:#6B7280;
         --wild-sand:#F5F5F5;
         --white:#ffffff;
-        --athens-gray:#F3F4F6;
+        --athens-gray:#E5E7EB;
+        --athens:#F3F4F6;
         --black:#000000;
         --ebony:#111827;
         --royal-blue:#4F46E5;
         --portage:#9EA0F6;
         --cornflower-blue:#6366F1;
         --mischka:#D1D5DB;
+        --river-bed:#4B5563;
+        --gray-chateau:#9CA3AF;
         /* Border Radius */
         --border-radius-sm:6px;
         --border-radius-md:14px;
@@ -57,6 +60,8 @@ export const Container = styled.div`
 export const AppContainer = styled(Container)`
   padding: 0 0.5rem;
   margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export default GlobalStyle;

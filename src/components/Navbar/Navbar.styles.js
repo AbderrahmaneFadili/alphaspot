@@ -90,11 +90,11 @@ export const NavBarMenuLink = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 0.7rem;
   border-radius: var(--border-radius-sm);
-  background-color: ${({ active }) => (active ? "var(--athens-gray)" : "none")};
+  background-color: ${({ active }) => (active ? "var(--athens)" : "none")};
   color: ${({ active }) => (active ? "var(--oxford-blue)" : "var(--pale-sky)")};
 
   &:hover {
-    background-color: var(--athens-gray);
+    background-color: var(--athens);
     color: var(--oxford-blue);
   }
 `;
