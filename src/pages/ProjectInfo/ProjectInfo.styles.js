@@ -4,19 +4,19 @@ import banner from "../../assets/images/banner-image.png";
 
 export const ProjectInfoWrapper = styled(Wrapper)`
   margin-left: 2.5rem;
-  position: relative;
 `;
 
 export const ProjectInfoForm = styled.form``;
 
 export const FormProjectProfile = styled.div`
   height: 250px;
+  position: relative;
 `;
 
 export const FormProjectAvatarContainer = styled.div`
   display: flex;
   position: absolute;
-  bottom: 9rem;
+  bottom: 0.4rem;
   left: 3rem;
 `;
 
@@ -55,3 +55,30 @@ export const InputsContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
+export const FormTitle = styled.h2`
+  font-size: var(--font-lg);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: var(--ebony);
+`;
+
+export const FormParagraph = styled.p`
+  margin-bottom: 0.6rem;
+  color: var(--pale-sky);
+  line-height: 1.5;
+`;
+
+export const FormCheckContainer = styled.div`
+  display: flex;
+`;
+
+export const FormCheckBox = styled.input`
+  margin-right: 0.5rem;
+  cursor: pointer;
+`;
+
+export const CheckTitle = styled(FormTitle)`
+  font-size: var(--font-md);
+`;
+export const FormCheckText = styled.div``;
