@@ -49,6 +49,10 @@ const GlobalStyle = createGlobalStyle`
       font-size:var(--font-md) ;
     }
 
+    input,button{
+        font-family:var(--main-font);
+    }
+
 `;
 
 export const Container = styled.div`

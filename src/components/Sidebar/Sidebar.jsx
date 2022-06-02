@@ -63,10 +63,10 @@ const Sidebar = () => {
   return (
     <SideWrapper>
       <SideBarList>
-        {sideBarList.map(({ Icon, link, to, active }) => {
+        {sideBarList.map(({ Icon, link, to, active }, i) => {
           return (
-            <SideBarListItem active={active}>
-              <SideBarListLink active={active} to={to}>
+            <SideBarListItem key={i.toString()} active={active ? true : false}>
+              <SideBarListLink active={active ? true : false} to={to}>
                 <Icon
                   size={19}
                   style={{

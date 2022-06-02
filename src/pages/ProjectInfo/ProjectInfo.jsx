@@ -1,4 +1,5 @@
 import React from "react";
+import FileInput from "../../components/FileInput/FileInput";
 import {
   ProjectInfoForm,
   ProjectInfoWrapper,
@@ -9,16 +10,23 @@ import {
   FormProjectAvatar,
   ChangeAvatarBtnContainer,
 } from "./ProjectInfo.styles";
+import Button from "../../components/Button/Button";
 
 const ProjectInfo = () => {
   return (
     <ProjectInfoWrapper>
-      <ProjectInfoForm>
+      <ProjectInfoForm method="post">
         {/* Project Profile */}
         <FormProjectProfile>
           {/* Form Project Banner */}
           <FormProjectBanner>
-            <ChangeBannerBtnContainer>Change Banner</ChangeBannerBtnContainer>
+            <ChangeBannerBtnContainer>
+              <FileInput
+                title="Change Project Page Banner Image"
+                size={"large"}
+                outline
+              />
+            </ChangeBannerBtnContainer>
           </FormProjectBanner>
           {/* Avatar Container */}
           <FormProjectAvatarContainer>
@@ -28,7 +36,9 @@ const ProjectInfo = () => {
               alt="avatar"
             />
             {/* Change Avatar Btn Container */}
-            <ChangeAvatarBtnContainer>Change Image</ChangeAvatarBtnContainer>
+            <ChangeAvatarBtnContainer>
+              <FileInput title="Change Image" size={"small"} />
+            </ChangeAvatarBtnContainer>
           </FormProjectAvatarContainer>
         </FormProjectProfile>
       </ProjectInfoForm>
