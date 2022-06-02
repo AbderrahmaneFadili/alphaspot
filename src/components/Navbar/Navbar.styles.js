@@ -12,16 +12,21 @@ export const NavBarTop = styled.div`
 
 export const NavBarContainer = styled.div`
   width: 100%;
-  max-width: 1250px;
+  max-width: var(--container-mxw-lg);
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding: 0 0.5rem;
+
+  @media screen and (min-width: 1300px) {
+    max-width: var(--container-mxw-xlg);
+  }
 `;
 
 export const NavBarBottom = styled.div``;
 
 export const NavBarBottomContainer = styled(Container)`
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

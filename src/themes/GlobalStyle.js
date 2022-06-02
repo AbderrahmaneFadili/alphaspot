@@ -33,6 +33,11 @@ const GlobalStyle = createGlobalStyle`
         --border-radius-sm:6px;
         --border-radius-md:14px;
         --border-radius-lg:100%;
+        /* container width */
+        --container-mxw-md:1150px;
+        --container-mxw-lg:1250px;
+        --container-mxw-xlg:1300px;
+        --container-mxw-sm:500px;
     }
 
     body{
@@ -45,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1150px;
+  max-width: var(--container-mxw-md);
   margin: 0 auto;
 `;
 
