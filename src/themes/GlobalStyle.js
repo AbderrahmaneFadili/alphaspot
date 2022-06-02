@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
         --wild-sand:#F5F5F5;
         --white:#ffffff;
         --athens-gray:#E5E7EB;
-        --athens:#F3F4F6;
+        --athens:#F9FAFB;
         --black:#000000;
         --ebony:#111827;
         --royal-blue:#4F46E5;

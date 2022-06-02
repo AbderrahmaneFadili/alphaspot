@@ -16,7 +16,7 @@ export const FormProjectProfile = styled.div`
 export const FormProjectAvatarContainer = styled.div`
   display: flex;
   position: absolute;
-  bottom: 3rem;
+  bottom: 9rem;
   left: 3rem;
 `;
 
@@ -44,6 +44,14 @@ export const ChangeBannerBtnContainer = styled.div`
 export const ChangeAvatarBtnContainer = styled.div`
   align-self: flex-end;
   position: relative;
-  bottom: 1rem;
+  bottom: 0.6rem;
   left: 1.5rem;
+`;
+
+export const InputsContainer = styled.div`
+  position: relative;
+  margin-bottom: 4rem;
+  top: 2rem;
+  display: flex;
+  justify-content: space-between;
 `;

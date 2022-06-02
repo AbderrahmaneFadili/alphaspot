@@ -9,13 +9,15 @@ import {
   FormProjectAvatarContainer,
   FormProjectAvatar,
   ChangeAvatarBtnContainer,
+  InputsContainer,
 } from "./ProjectInfo.styles";
 import Button from "../../components/Button/Button";
+import InputField from "../../components/InputField/InputField";
 
 const ProjectInfo = () => {
   return (
     <ProjectInfoWrapper>
-      <ProjectInfoForm method="post">
+      <ProjectInfoForm method="post" onSubmit={(e) => e.preventDefault()}>
         {/* Project Profile */}
         <FormProjectProfile>
           {/* Form Project Banner */}
@@ -41,6 +43,13 @@ const ProjectInfo = () => {
             </ChangeAvatarBtnContainer>
           </FormProjectAvatarContainer>
         </FormProjectProfile>
+        {/* Inputs  */}
+        <InputsContainer>
+          <InputField type={"text"} label="Name" />
+          <InputField type={"text"} label="Slug" formatText="waffles.xyz/" />
+        </InputsContainer>
+        {/* Save Button */}
+        <Button title="Save Settings" primary size={"small"} type="submit" />
       </ProjectInfoForm>
     </ProjectInfoWrapper>
   );
