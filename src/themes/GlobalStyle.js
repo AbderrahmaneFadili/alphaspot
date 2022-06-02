@@ -54,4 +54,9 @@ export const Container = styled.div`
   margin: 0 auto;
 `;
 
+export const AppContainer = styled(Container)`
+  padding: 0 0.5rem;
+  margin-top: 2rem;
+`;
+
 export default GlobalStyle;
